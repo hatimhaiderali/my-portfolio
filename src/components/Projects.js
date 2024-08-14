@@ -1,20 +1,21 @@
 import React from 'react';
+import './Projects.css'; // Import the CSS for this component
 
-const Projects = () => {
-  return (
-    <section id="projects">
-      <h2>Projects</h2>
-      <div>
-        <h3>Project 1</h3>
-        <p>Description of Project 1.</p>
+const Projects = () => (
+  <section id="projects" className="section">
+    <div className="container">
+      <h2 className="section-title">Projects</h2>
+      <div className="project-card">
+        <img src="path/to/image.jpg" alt="Project" />
+        <div className="project-info">
+          <h3>Project Title</h3>
+          <p>Project description...</p>
+          <a href="https://github.com/your-repo" className="btn">View Project</a>
+        </div>
       </div>
-      <div>
-        <h3>Project 2</h3>
-        <p>Description of Project 2.</p>
-      </div>
-      {/* Add more projects as needed */}
-    </section>
-  );
-};
+      {/* Add more project cards as needed */}
+    </div>
+  </section>
+);
 
 export default Projects;
