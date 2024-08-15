@@ -3,8 +3,10 @@ import './Header.css'; // Import the CSS for this component
 
 const Header = () => (
   <header>
-    <div className="container">
-      <h1>Hatim Haider Ali</h1>
+    <div className="header-container">
+      <email>
+        <a href="mailto:hatimhaiderali786@gmail.com">hatimhaiderali786@gmail.com</a>
+      </email>
       <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>

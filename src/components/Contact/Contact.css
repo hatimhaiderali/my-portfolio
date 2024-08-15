@@ -1,0 +1,127 @@
+.contact-form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 10vh auto;
+    background-color: #f5f5f5;
+}
+
+.contact-form-card {
+    border-radius: 15px;
+    box-shadow: 0 0 5px #00000015;
+    padding: 5vh 2vw;
+    background-color: #fff;
+    /* Optional: Ensure background is white for form clarity */
+    width: 30%;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.name-group,
+.contact-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group-inline {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.form-group-inline:last-child {
+    margin-right: 0;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+    display: block;
+}
+
+input,
+textarea,
+select {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    overflow-y: auto;
+}
+
+select {
+    background-color: #fff;
+    /* Ensures dropdown background is white */
+}
+
+.submit-button {
+    background-color: #3a9efc;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #1f93ff;
+    transform: scale(1.01);
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
