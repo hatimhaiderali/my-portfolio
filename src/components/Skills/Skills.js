@@ -7,6 +7,8 @@ import wordpress from '../../assets/wordpress.png';
 import node from '../../assets/node.png';
 import sql from '../../assets/sql-server.png';
 import js from '../../assets/js.png';
+import python from '../../assets/python.png';
+import c from '../../assets/c-.png';
 const Skills = () => {
   const skills = [
     {
@@ -26,6 +28,14 @@ const Skills = () => {
       title: 'Node.js',
     },
     {
+      icon: python, // Replace with your Node.js logo
+      title: 'Python',
+    },
+    {
+      icon: c, // Replace with your Node.js logo
+      title: 'C++',
+    },
+    {
       icon: figma, // Replace with your Figma logo
       title: 'Figma',
     },
@@ -40,12 +50,12 @@ const Skills = () => {
   ];
 
   return (
-    <div className="my-skills">
-      <h1>My Skills</h1>
+    <section id='skills' className="skills-container">
+      <h1 className='gradient-text'>My Skills</h1>
       <p>
         Crafting seamless digital experiences with a versatile skill set.
       </p>
-      <div className="skills-container">
+      <div className="my-skills-container">
         {skills.map((skill) => (
           <div key={skill.title} className="skill">
             <img src={skill.icon} alt={skill.title} className="skill-icon" />
@@ -53,7 +63,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

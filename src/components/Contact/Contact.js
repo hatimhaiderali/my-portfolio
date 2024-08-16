@@ -4,7 +4,7 @@ import './Contact.css'
 
 const Contact = () => {
   return (
-    <div className="contact-form-container">
+    <section id='contact' className="contact-form-container">
       <div className='contact-form-card'>
         <h2>Let's work together!</h2>
         <p>I design and code beautifully simple things and I love what I do. Just simple like that!</p>
@@ -64,7 +64,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section >
   );
 };
 

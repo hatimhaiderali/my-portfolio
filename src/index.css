@@ -21,8 +21,16 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(90deg, #0019a8, #41a0f8);
+  background: linear-gradient(90deg, #001cbd, #41a0f8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh !important;
 }
