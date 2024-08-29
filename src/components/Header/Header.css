@@ -1,7 +1,7 @@
 /* Header Styling */
 header {
-  background-color: #1e2a38;
-  color: #fff;
+  background-color: #ffffff00;
+  color: #000000;
   padding: 15px 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -12,7 +12,7 @@ header {
 }
 
 header.scrolled {
-  background-color: #141a24;
+  background-color: #ffffffaf;
   padding: 10px 0;
 }
 
@@ -21,14 +21,14 @@ header.scrolled {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  /*   max-width: 1200px; */
+  margin: 0;
   padding: 0 20px;
 }
 
 /* Email Styling */
 .email a {
-  color: #fff;
+  color: #0e6bdd;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -41,10 +41,33 @@ header.scrolled {
 /* Navigation Styling */
 nav {
   display: flex;
+  align-items: center;
+}
+
+nav .contact-a {
+  color: #ffffff;
+  background: linear-gradient(90deg, #001cbd, #41a0f8);
+  padding: 0.6rem 1rem;
+  border-radius: 25px;
+  transition: background-position 0.3s ease;
+  background-size: 200% 100%;
+  /* Ensure the gradient is wider than the element */
+  background-position: 0% 0%;
+  /* Start the gradient on the left */
+}
+
+nav .contact-a:hover {
+  color: #ffffff;
+  background-position: right;
+  background-position: 100% 0%;
+}
+
+nav .contact-a::after {
+  display: none;
 }
 
 nav a {
-  color: #fff;
+  color: #0e6bdd;
   margin: 0 15px;
   text-decoration: none;
   font-weight: 600;
@@ -59,15 +82,11 @@ nav a::after {
   width: 0;
   height: 2px;
   display: block;
-  background: #9ed0ff;
+  background: #005db3;
   transition: width 0.3s;
   bottom: -3px;
   left: 50%;
   transform: translateX(-50%);
-}
-
-nav a:hover {
-  color: #9ed0ff;
 }
 
 nav a:hover::after {

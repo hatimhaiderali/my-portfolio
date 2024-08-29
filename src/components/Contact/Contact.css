@@ -13,7 +13,6 @@
     box-shadow: 0 0 5px #00000015;
     padding: 5vh 2vw;
     background-color: #fff;
-    /* Optional: Ensure background is white for form clarity */
     width: 30%;
 }
 
@@ -24,7 +23,7 @@ h2 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
     color: #555;
 }
@@ -83,7 +82,7 @@ select {
 }
 
 .submit-button {
-    background-color: #3a9efc;
+    background: linear-gradient(90deg, #001cbd, #41a0f8);
     color: #fff;
     padding: 0.8rem 1.5rem;
     border: none;
@@ -91,10 +90,15 @@ select {
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.3s ease;
+    transition: background-position 0.3s ease;
+    background-size: 200% 100%;
+    /* Ensure the gradient is wider than the element */
+    background-position: 0% 0%;
 }
 
 .submit-button:hover {
-    background-color: #1f93ff;
+    background-position: right;
+    background-position: 100% 0%;
     transform: scale(1.01);
 }
 
@@ -122,6 +126,45 @@ h3 {
     margin-bottom: 0.5rem;
 }
 
-p {
+.success-prompt {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #28a745;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    height: auto;
+    width: 80%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.success-prompt.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.success-icon {
+    font-size: 40px;
+    margin-right: 15px;
+    color: #ffffff;
+}
+
+.success-message {
+    text-align: center;
+}
+
+.success-message p {
+    color: white;
     font-size: 1rem;
+    margin-bottom: 0;
 }

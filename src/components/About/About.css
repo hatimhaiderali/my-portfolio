@@ -6,7 +6,10 @@
     padding: 0 10vw;
     box-sizing: border-box;
     overflow: hidden;
-    background: linear-gradient(to right, #fff, #ffffff);
+    /* background: linear-gradient(to right, #fff, #ffffff); */
+    background: linear-gradient(to top right, white, white 80%, #c4e3ff 100%);
+
+
     position: relative;
     /* Ensure that absolute positioning of letter-container works */
 }

@@ -18,20 +18,22 @@ const projects = [
 ];
 
 const Projects = () => (
-  <section id='projects' className="projects-container">
-    <h2 className="section-title gradient-text">My Projects</h2>
-    <p>
-      We turn your ideas into engaging web projects that captivate and inspire.
-    </p>
-    <div className="project-grid">
-      {projects.map((project, index) => (
-        <a key={index} href={project.link} className="project-card" target="_blank" rel="noopener noreferrer">
-          <img src={project.image} alt={project.title} />
-          <div className="project-info">
-            <h3>{project.title}</h3>
-          </div>
-        </a>
-      ))}
+  <section id='projects' className='projects-section'>
+    <div className="projects-container">
+      <h2 className="section-title gradient-text">My Projects</h2>
+      <p>
+        We turn your ideas into engaging web projects that captivate and inspire.
+      </p>
+      <div className="project-grid">
+        {projects.map((project, index) => (
+          <a key={index} href={project.link} className="project-card" target="_blank" rel="noopener noreferrer">
+            <img src={project.image} alt={project.title} />
+            <div className="project-info">
+              <h3>{project.title}</h3>
+            </div>
+          </a>
+        ))}
+      </div>
     </div>
   </section>
 );
