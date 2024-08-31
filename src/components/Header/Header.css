@@ -26,15 +26,22 @@ header.scrolled {
   padding: 0 20px;
 }
 
+.email-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+
 /* Email Styling */
-.email a {
+.email-div a {
   color: #0e6bdd;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.email a:hover {
+.email-div a:hover {
   color: #9ed0ff;
 }
 

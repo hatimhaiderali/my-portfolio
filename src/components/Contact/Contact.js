@@ -7,7 +7,7 @@ const Contact = () => {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = async (e) => {
+  /* const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
@@ -20,10 +20,34 @@ const Contact = () => {
 
       if (response.ok) {
         setIsSubmitted(true);
+        e.target.reset();
         setTimeout(() => {
           setIsSubmitted(false);
         }, 3000);
       }
+    } catch (error) {
+      console.error('Form submission error:', error);
+    }
+  }; */
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitted(true); // Show success prompt immediately
+
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+
+    setTimeout(() => {
+      setIsSubmitted(false);
+    }, 3000);
+    e.target.reset();
+
+    try {
+      await fetch('https://script.google.com/macros/s/AKfycbwq8rWf_01zJHsI12LREXeWvQEiHv7qsxxoE3E2UFbwwt5h8mPYRjPy8SzcsccP85H6/exec', {
+        method: 'POST',
+        body: new URLSearchParams(data),
+      });
+      // After the request is successful, clear the form
     } catch (error) {
       console.error('Form submission error:', error);
     }
