@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.942e6c80.css",
-    "main.js": "/my-portfolio/static/js/main.5718fe03.js",
+    "main.css": "/my-portfolio/static/css/main.a436c301.css",
+    "main.js": "/my-portfolio/static/js/main.dfa663db.js",
     "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
     "static/media/fa-solid-900.ttf": "/my-portfolio/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/fa-brands-400.ttf": "/my-portfolio/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
@@ -12,6 +12,7 @@
     "static/media/fa-regular-400.ttf": "/my-portfolio/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
     "static/media/sql-server.png": "/my-portfolio/static/media/sql-server.fad35a2b839390e3d5a4.png",
     "static/media/python.png": "/my-portfolio/static/media/python.6a5cbc319ab3ddf8ef92.png",
+    "static/media/h_icon.png": "/my-portfolio/static/media/h_icon.06eef4472f1f9391cd46.png",
     "static/media/node.png": "/my-portfolio/static/media/node.d3d07d54692907951251.png",
     "static/media/react.png": "/my-portfolio/static/media/react.5fe61ddc2e25983710a6.png",
     "static/media/wordpress.png": "/my-portfolio/static/media/wordpress.69a9ba72be37b4e0745d.png",
@@ -24,12 +25,12 @@
     "static/media/html-css.png": "/my-portfolio/static/media/html-css.331404ee51077e2518d8.png",
     "static/media/fa-v4compatibility.woff2": "/my-portfolio/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/my-portfolio/index.html",
-    "main.942e6c80.css.map": "/my-portfolio/static/css/main.942e6c80.css.map",
-    "main.5718fe03.js.map": "/my-portfolio/static/js/main.5718fe03.js.map",
+    "main.a436c301.css.map": "/my-portfolio/static/css/main.a436c301.css.map",
+    "main.dfa663db.js.map": "/my-portfolio/static/js/main.dfa663db.js.map",
     "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.942e6c80.css",
-    "static/js/main.5718fe03.js"
+    "static/css/main.a436c301.css",
+    "static/js/main.dfa663db.js"
   ]
 }
