@@ -18,11 +18,9 @@
 
 .carousel-div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     position: relative;
-
-    /* For positioning controls */
 }
 
 .testimonials-list {
@@ -30,38 +28,66 @@
     flex-direction: row;
     gap: 1rem;
     overflow: hidden;
-    width: 100%;
     max-width: 1200px;
     position: relative;
-    /* For positioning animation */
-    transition: transform 0.5s ease-in-out;
-    background-color: #0057b300;
-    border-radius: 10px;
-    /* Smooth sliding effect */
+    margin: 0 1rem 0 1rem;
 }
 
 .testimonial-card {
-    background: #f9feff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fefefe;
     border-radius: 10px;
-    padding: 1rem;
-    /* box-shadow: 0 0px 10px rgb(0, 0, 0); */
-    min-width: 220px;
-    min-height: 300px;
+    padding: 1rem 1rem 1rem 1rem;
+    min-width: 250px;
+    min-height: 320px;
+    max-width: 250px;
+    max-height: 320px;
     flex: 0 0 auto;
-    /* Ensure cards do not stretch */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    /*   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    overflow: hidden;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.profile-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+.testimonial-author-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    margin: 0;
+}
+
+.testimonial-position {
+    color: #777;
+    margin: 0;
 }
 
 .testimonial-message {
     font-style: italic;
-    margin-bottom: 0.5rem;
+    color: #4b4b4b;
+    background-color: #eeeeee;
+    padding: 0.5rem;
+    border-radius: 10px;
 }
 
-.testimonial-author {
-    text-align: right;
-    font-weight: bold;
-}
-
-.carousel-controls {
+/* .carousel-controls {
     margin-top: 1rem;
     display: flex;
     gap: 1rem;
@@ -85,14 +111,48 @@
     background-color: #cccccc;
     cursor: not-allowed;
 }
-
+ */
 .arrow {
-    font-size: 1.3rem;
-    color: #6eccff;
+    font-size: 1.5rem;
+    color: #4b4b4b;
     cursor: pointer;
     transition: scale 0.1s ease;
 }
 
 .arrow:hover {
     scale: 1.1;
+}
+
+/* sliding animation */
+
+.slide-enter {
+    animation: slideIn 0.3s forwards;
+}
+
+.slide-exit {
+    animation: slideOut 0.3s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
 }

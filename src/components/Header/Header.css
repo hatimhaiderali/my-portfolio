@@ -1,6 +1,6 @@
 /* Header Styling */
 header {
-  background-color: #ffffff00;
+  background-color: #00000000;
   color: #000000;
   padding: 15px 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -9,6 +9,8 @@ header {
   top: 0;
   z-index: 1000;
   transition: background-color 0.3s ease, padding 0.3s ease;
+  height: 40px;
+  max-width: 100%;
 }
 
 header.scrolled {
@@ -21,7 +23,6 @@ header.scrolled {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*   max-width: 1200px; */
   margin: 0;
   padding: 0 20px;
 }
@@ -30,7 +31,13 @@ header.scrolled {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 20%;
+  width: auto;
+  /* Adjusted for better responsiveness */
+}
+
+.email-div img {
+  margin-right: 10px;
+  /* Space between logo and email */
 }
 
 /* Email Styling */
@@ -49,28 +56,6 @@ header.scrolled {
 nav {
   display: flex;
   align-items: center;
-}
-
-nav .contact-a {
-  color: #ffffff;
-  background: linear-gradient(90deg, #001cbd, #41a0f8);
-  padding: 0.6rem 1rem;
-  border-radius: 25px;
-  transition: background-position 0.3s ease;
-  background-size: 200% 100%;
-  /* Ensure the gradient is wider than the element */
-  background-position: 0% 0%;
-  /* Start the gradient on the left */
-}
-
-nav .contact-a:hover {
-  color: #ffffff;
-  background-position: right;
-  background-position: 100% 0%;
-}
-
-nav .contact-a::after {
-  display: none;
 }
 
 nav a {
@@ -98,4 +83,111 @@ nav a::after {
 
 nav a:hover::after {
   width: 100%;
+}
+
+nav a:last-child {
+  color: #ffffff;
+  background: linear-gradient(90deg, #001cbd, #41a0f8);
+  padding: 0.6rem 1rem;
+  border-radius: 25px;
+  transition: background-position 0.3s ease;
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+}
+
+nav a:last-child:hover {
+  color: #ffffff;
+  background-position: 100% 0%;
+}
+
+nav a:last-child::after {
+  display: none;
+}
+
+.menu-button {
+  display: none;
+  background-color: #003d5c;
+  border: none;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-right: 1rem;
+}
+
+.menu-button i {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.menu-button:hover {
+  background-color: #005db3;
+  transform: scale(1.05);
+}
+
+.menu-button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+  header {
+    position: static;
+  }
+
+  .header-container {
+    flex-direction: column;
+    padding: 0 0rem;
+    transition: max-height 0.5s ease-out;
+    max-height: 0;
+  }
+
+  .header-container.show {
+    max-height: 100vh;
+  }
+
+  .email-div {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1000;
+  }
+
+  nav a {
+    color: #ffffff;
+    background-color: #003d5c;
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+  }
+
+  nav a:hover {
+    background-color: #00699e;
+  }
+
+  nav a::after {
+    display: none;
+  }
+
+  nav a:last-child {
+    color: #ffffff;
+    background-color: #003d5c !important;
+    padding: none;
+    border-radius: 0;
+    transition: background-position 0.3s ease;
+    background-size: none;
+    background-position: none;
+  }
 }

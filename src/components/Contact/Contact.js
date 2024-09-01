@@ -57,7 +57,7 @@ const Contact = () => {
     <section id='contact' className="contact-form-container">
       <div className='contact-form-card'>
         <h2>Let's work together!</h2>
-        <p>I design and code beautifully simple things and I love what I do. Just simple like that!</p>
+        <p className='contact-p'>I design and code beautifully simple things and I love what I do. Just simple like that!</p>
         <form onSubmit={handleSubmit} method='POST' className="contact-form" action='https://script.google.com/macros/s/AKfycbyJq9IL1VMjYL1RQHSDqrN0PB3QDxmAs4K3671L1GN9SCyuU88_ZkfQ1UKCuoA7VUXp/exec'>
           <div className="form-group name-group">
             <div className="form-group-inline">
