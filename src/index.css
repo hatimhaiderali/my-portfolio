@@ -34,3 +34,9 @@ html {
 section {
   height: 100vh !important;
 }
+
+@media (max-width: 768px) {
+  section {
+    height: auto !important;
+  }
+}

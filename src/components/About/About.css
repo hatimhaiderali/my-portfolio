@@ -6,8 +6,9 @@
     padding: 0 10vw;
     box-sizing: border-box;
     overflow-x: hidden;
-    /* background: linear-gradient(to top right, white, white 80%, #c4e3ff 100%); */
+    background: linear-gradient(to top right, white, white 80%, #c4e3ff 100%);
     position: relative;
+    height: auto;
 }
 
 .content {
@@ -55,6 +56,7 @@
 
 .content button {
     background-color: #69b6ff;
+    /*     background-color: #ffb700; */
     border: none;
     color: black;
     padding: 1rem 2rem;
@@ -116,8 +118,10 @@
 
 .mob-image-container,
 .image-container {
-    width: 340px;
-    height: 380px;
+    width: 100%;
+    height: auto;
+    max-width: 340px;
+    max-height: 380px;
     overflow: hidden;
     border-radius: 10px;
     transform: rotate(5deg);
@@ -157,11 +161,9 @@
     font-size: 15rem;
     font-weight: bold;
     color: transparent;
-    /* background: linear-gradient(135deg, #00b4d8, #0096c7); */
     -webkit-background-clip: text;
     background-clip: text;
     color: #fff;
-    /* White text color */
     text-shadow:
         1px 1px 0 #aaccff,
         -1px -1px 0 #aaccff,
@@ -176,10 +178,11 @@
 }
 
 .about-links {
-    height: 8rem;
+    height: auto;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    gap: 2rem;
 }
 
 @keyframes pump {
@@ -196,7 +199,6 @@
     }
 }
 
-
 @media (max-width: 768px) {
     html {
         font-size: 12px;
@@ -205,6 +207,7 @@
     .about-container {
         flex-direction: column;
         padding: 3vw;
+        height: 100vh;
     }
 
     .content {
@@ -237,6 +240,8 @@
 
     .mob-image-container {
         display: block;
+        max-width: 300px;
+        max-height: 340px;
     }
 
     .about-links {
