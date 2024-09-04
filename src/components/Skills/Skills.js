@@ -52,11 +52,11 @@ const Skills = () => {
   return (
     <section id='skills' className='skills-section'>
       <div className="skills-container">
-        <h1 className='gradient-text'>My Skills</h1>
+        <h1 className='gradient-text section-title'>My Skills</h1>
         <p>
           Crafting seamless digital experiences with a versatile skill set.
         </p>
-        <div className="my-skills-container">
+        <div className="skills-grid">
           {skills.map((skill) => (
             <div key={skill.title} className="skill">
               <img src={skill.icon} alt={skill.title} className="skill-icon" />

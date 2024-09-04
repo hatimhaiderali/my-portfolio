@@ -7,29 +7,6 @@ const Contact = () => {
 
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  /* const handleSubmit = async (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData.entries());
-
-    try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbyJq9IL1VMjYL1RQHSDqrN0PB3QDxmAs4K3671L1GN9SCyuU88_ZkfQ1UKCuoA7VUXp/exec', {
-        method: 'POST',
-        body: new URLSearchParams(data),
-      });
-
-      if (response.ok) {
-        setIsSubmitted(true);
-        e.target.reset();
-        setTimeout(() => {
-          setIsSubmitted(false);
-        }, 3000);
-      }
-    } catch (error) {
-      console.error('Form submission error:', error);
-    }
-  }; */
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitted(true); // Show success prompt immediately
@@ -101,7 +78,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
 
       <div className="contact-info">
         <div className="info-item">

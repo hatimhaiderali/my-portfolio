@@ -41,14 +41,14 @@ header.scrolled {
 }
 
 /* Email Styling */
-.email-div a {
+.email {
   color: #0e6bdd;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.email-div a:hover {
+.email:hover {
   color: #9ed0ff;
 }
 
@@ -85,7 +85,7 @@ nav a:hover::after {
   width: 100%;
 }
 
-nav a:last-child {
+.contact-a {
   color: #ffffff;
   background: linear-gradient(90deg, #001cbd, #41a0f8);
   padding: 0.6rem 1rem;
@@ -93,31 +93,35 @@ nav a:last-child {
   transition: background-position 0.3s ease;
   background-size: 200% 100%;
   background-position: 0% 0%;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-nav a:last-child:hover {
+.contact-a:hover {
   color: #ffffff;
   background-position: 100% 0%;
 }
 
-nav a:last-child::after {
+.contact-a::after {
+  display: none;
+}
+
+.mob-contact-a {
   display: none;
 }
 
 .menu-button {
   display: none;
-  background-color: #003d5c;
   border: none;
   padding: 0.5rem 0.7rem;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
-  margin-right: 1rem;
 }
 
 .menu-button i {
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .menu-button:hover {
@@ -146,8 +150,16 @@ nav a:last-child::after {
   }
 
   .email-div {
-    width: 100%;
+    width: 95%;
     justify-content: space-between;
+  }
+
+  .email {
+    display: none;
+  }
+
+  .email-div img {
+    display: none;
   }
 
   .menu-button {
@@ -181,7 +193,7 @@ nav a:last-child::after {
     display: none;
   }
 
-  nav a:last-child {
+  /* nav a:last-child {
     color: #ffffff;
     background-color: #003d5c !important;
     padding: none;
@@ -189,5 +201,12 @@ nav a:last-child::after {
     transition: background-position 0.3s ease;
     background-size: none;
     background-position: none;
+  } */
+  .contact-a {
+    display: none;
+  }
+
+  .mob-contact-a {
+    display: block;
   }
 }

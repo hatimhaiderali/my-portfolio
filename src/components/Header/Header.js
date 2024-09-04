@@ -14,11 +14,13 @@ const Header = () => {
       <div className={`header-container ${menuOpen ? 'show' : ''}`}>
         <div className="email-div">
           <img src={logo} alt='H' width={40} height={40} />
-          <a href="mailto:hatimhaiderali786@gmail.com">hatimhaiderali786@gmail.com</a>
-          <button className="menu-button" onClick={toggleMenu}>
+          <a href="mailto:hatimhaiderali786@gmail.com" className='email'>hatimhaiderali786@gmail.com</a>
+          <button className="menu-button gradient-text" onClick={toggleMenu}>
             <i className="fas fa-bars"></i>
           </button>
+          <a className='contact-a mob-contact-a' href="#contact"><i class="fa-solid fa-phone"></i></a>
         </div>
+
         <nav>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>

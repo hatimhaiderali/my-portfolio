@@ -8,7 +8,6 @@
     overflow-x: hidden;
     background: linear-gradient(to top right, white, white 80%, #c4e3ff 100%);
     position: relative;
-    height: auto;
 }
 
 .content {
