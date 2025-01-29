@@ -9,6 +9,14 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const navItems = [
+    { text: "About", href: "#about" },
+    { text: "Projects", href: "#projects" },
+    { text: "Skills", href: "#skills" },
+    /* { text: "Testimonials", href: "#testimonials" }, */
+    { text: "Contact Me", href: "#contact", className: "contact-a" }
+  ];
+
   return (
     <header>
       <div className={`header-container ${menuOpen ? 'show' : ''}`}>
@@ -18,15 +26,19 @@ const Header = () => {
           <button className="menu-button gradient-text" onClick={toggleMenu}>
             <i className="fas fa-bars"></i>
           </button>
-          <a className='contact-a mob-contact-a' href="#contact"><i class="fa-solid fa-phone"></i></a>
+          <a className='contact-a mob-contact-a' href="tel:+92 3012533883"><i class="fa-solid fa-phone"></i></a>
         </div>
 
         <nav>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#testimonials">Testimonials</a>
-          <a className='contact-a' href="#contact">Contact Me</a>
+          {navItems.map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              className={item.className || ''}
+            >
+              {item.text}
+            </a>
+          ))}
         </nav>
       </div>
     </header>
