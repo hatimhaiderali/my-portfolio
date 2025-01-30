@@ -23,14 +23,6 @@
     /* Added margin for spacing */
 }
 
-.section-title {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 2.5rem;
-    /* Increased margin for separation */
-}
-
 .project-grid {
     display: flex;
     flex-wrap: wrap;

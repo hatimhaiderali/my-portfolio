@@ -18,7 +18,7 @@ const Header = () => {
           <button className="menu-button gradient-text" onClick={toggleMenu}>
             <i className="fas fa-bars"></i>
           </button>
-          <a className='contact-a mob-contact-a' href="#contact"><i class="fa-solid fa-phone"></i></a>
+          <a className='mob-contact-a' href="tel:+92 3012533883"><i class="fa-solid fa-phone"></i></a>
         </div>
 
         <nav>

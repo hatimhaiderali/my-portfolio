@@ -1,8 +1,7 @@
-import React from 'react';
+
 import './Projects.css';
 import admin from '../../assets/image3.png';
 import hash from '../../assets/image.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const projects = [
   {

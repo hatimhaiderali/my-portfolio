@@ -27,6 +27,14 @@ body {
   background-clip: text;
 }
 
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  /* Increased margin for separation */
+}
+
 html {
   scroll-behavior: smooth;
 }

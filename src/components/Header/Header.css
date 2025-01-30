@@ -97,6 +97,18 @@ nav a:hover::after {
   font-weight: 600;
 }
 
+.mob-contact-a {
+  color: #ffffff;
+  background: linear-gradient(90deg, #001cbd, #41a0f8);
+  padding: 0.6rem 1rem;
+  border-radius: 25px;
+  transition: background-position 0.3s ease;
+  background-size: 200% 100%;
+  background-position: 0% 0%;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .contact-a:hover {
   color: #ffffff;
   background-position: 100% 0%;
@@ -193,17 +205,17 @@ nav a:hover::after {
     display: none;
   }
 
-  /* nav a:last-child {
-    color: #ffffff;
-    background-color: #003d5c !important;
-    padding: none;
-    border-radius: 0;
-    transition: background-position 0.3s ease;
-    background-size: none;
-    background-position: none;
-  } */
   .contact-a {
-    display: none;
+    color: #ffffff;
+    background-color: #003d5c;
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+    border-radius: 0;
+    text-decoration: none;
+    font-weight: 600;
   }
 
   .mob-contact-a {
