@@ -9,6 +9,14 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const navItems = [
+    { text: "About", href: "#about" },
+    { text: "Projects", href: "#projects" },
+    { text: "Skills", href: "#skills" },
+    /* { text: "Testimonials", href: "#testimonials" }, */
+    { text: "Contact Me", href: "#contact", className: "contact-a" }
+  ];
+
   return (
     <header>
       <div className={`header-container ${menuOpen ? 'show' : ''}`}>
@@ -22,11 +30,15 @@ const Header = () => {
         </div>
 
         <nav>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#testimonials">Testimonials</a>
-          <a className='contact-a' href="#contact">Contact Me</a>
+          {navItems.map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              className={item.className || ''}
+            >
+              {item.text}
+            </a>
+          ))}
         </nav>
       </div>
     </header>

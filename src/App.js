@@ -1,11 +1,10 @@
 import React from 'react';
 import Header from './components/Header/Header';
-import About from './components/About/About';
-import Projects from './components/Projects/Projects';
-import Skills from './components/Skills/Skills';
-import Contact from './components/Contact/Contact';
-import Testimonials from './components/Testimonials/testimonials';
-/* import Test from './components/Test/test'; */
+import About from './sections/About/About';
+import Projects from './sections/Projects/Projects';
+import Skills from './sections/Skills/Skills';
+import Contact from './sections/Contact/Contact';
+import Testimonials from './sections/Testimonials/testimonials';
 import './index.css'; // Import global styles
 
 
